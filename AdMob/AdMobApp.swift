@@ -24,7 +24,10 @@ struct AdMobApp: App {
             //RewardAdView()
             
             // 2
-            InterstitialAdView()
+            //InterstitialAdView()
+            
+            // 3
+            BannerAdView()
         }
     }
 }

@@ -15,6 +15,8 @@
 		1F9DE8442AAC962000FB8152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9DE8432AAC962000FB8152 /* Assets.xcassets */; };
 		1F9DE8472AAC962000FB8152 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9DE8462AAC962000FB8152 /* Preview Assets.xcassets */; };
 		1F9DE8522AACADE000FB8152 /* RewardAdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DE8512AACADE000FB8152 /* RewardAdsManager.swift */; };
+		1FD2D16A2AACF8CC005E1A50 /* BannerAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2D1692AACF8CC005E1A50 /* BannerAdView.swift */; };
+		1FD2D16C2AACF8D9005E1A50 /* BannerAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2D16B2AACF8D9005E1A50 /* BannerAdManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		1F9DE8462AAC962000FB8152 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F9DE84D2AACAC1600FB8152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F9DE8512AACADE000FB8152 /* RewardAdsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardAdsManager.swift; sourceTree = "<group>"; };
+		1FD2D1692AACF8CC005E1A50 /* BannerAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdView.swift; sourceTree = "<group>"; };
+		1FD2D16B2AACF8D9005E1A50 /* BannerAdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdManager.swift; sourceTree = "<group>"; };
 		526BFDAC7A43AE59C8E645D6 /* Pods_AdMob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdMob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7134D407DB22013BBAA6C2D2 /* Pods-AdMob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMob.release.xcconfig"; path = "Target Support Files/Pods-AdMob/Pods-AdMob.release.xcconfig"; sourceTree = "<group>"; };
 		CBDA7D36565C1719A24A4872 /* Pods-AdMob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMob.debug.xcconfig"; path = "Target Support Files/Pods-AdMob/Pods-AdMob.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 		1F9DE84E2AACADA400FB8152 /* GoogleAds */ = {
 			isa = PBXGroup;
 			children = (
+				1FD2D1682AACF634005E1A50 /* Banner */,
 				1F3493682AACE34700F8953F /* Interstitial */,
 				1F9DE8502AACADC300FB8152 /* Reward */,
 			);
@@ -115,6 +120,15 @@
 				1F34936D2AACE86D00F8953F /* RewardAdView.swift */,
 			);
 			path = Reward;
+			sourceTree = "<group>";
+		};
+		1FD2D1682AACF634005E1A50 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				1FD2D1692AACF8CC005E1A50 /* BannerAdView.swift */,
+				1FD2D16B2AACF8D9005E1A50 /* BannerAdManager.swift */,
+			);
+			path = Banner;
 			sourceTree = "<group>";
 		};
 		BEF2E4647F81FD5B8445FB55 /* Frameworks */ = {
@@ -248,9 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD2D16C2AACF8D9005E1A50 /* BannerAdManager.swift in Sources */,
 				1F9DE8522AACADE000FB8152 /* RewardAdsManager.swift in Sources */,
 				1F34936C2AACE86000F8953F /* InterstitialAdView.swift in Sources */,
 				1F34936A2AACE36300F8953F /* InterstitialAdsManager.swift in Sources */,
+				1FD2D16A2AACF8CC005E1A50 /* BannerAdView.swift in Sources */,
 				1F34936E2AACE86D00F8953F /* RewardAdView.swift in Sources */,
 				1F9DE8402AAC961F00FB8152 /* AdMobApp.swift in Sources */,
 			);
