@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0D4030317F043240EC5EED20 /* Pods_AdMob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526BFDAC7A43AE59C8E645D6 /* Pods_AdMob.framework */; };
+		1F34936A2AACE36300F8953F /* InterstitialAdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3493692AACE36300F8953F /* InterstitialAdsManager.swift */; };
+		1F34936C2AACE86000F8953F /* InterstitialAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F34936B2AACE86000F8953F /* InterstitialAdView.swift */; };
+		1F34936E2AACE86D00F8953F /* RewardAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F34936D2AACE86D00F8953F /* RewardAdView.swift */; };
 		1F9DE8402AAC961F00FB8152 /* AdMobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DE83F2AAC961F00FB8152 /* AdMobApp.swift */; };
-		1F9DE8422AAC961F00FB8152 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DE8412AAC961F00FB8152 /* ContentView.swift */; };
 		1F9DE8442AAC962000FB8152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9DE8432AAC962000FB8152 /* Assets.xcassets */; };
 		1F9DE8472AAC962000FB8152 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9DE8462AAC962000FB8152 /* Preview Assets.xcassets */; };
 		1F9DE8522AACADE000FB8152 /* RewardAdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DE8512AACADE000FB8152 /* RewardAdsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F3493692AACE36300F8953F /* InterstitialAdsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdsManager.swift; sourceTree = "<group>"; };
+		1F34936B2AACE86000F8953F /* InterstitialAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdView.swift; sourceTree = "<group>"; };
+		1F34936D2AACE86D00F8953F /* RewardAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardAdView.swift; sourceTree = "<group>"; };
 		1F9DE83C2AAC961F00FB8152 /* AdMob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdMob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F9DE83F2AAC961F00FB8152 /* AdMobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobApp.swift; sourceTree = "<group>"; };
-		1F9DE8412AAC961F00FB8152 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F9DE8432AAC962000FB8152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F9DE8462AAC962000FB8152 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F9DE84D2AACAC1600FB8152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F3493682AACE34700F8953F /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				1F3493692AACE36300F8953F /* InterstitialAdsManager.swift */,
+				1F34936B2AACE86000F8953F /* InterstitialAdView.swift */,
+			);
+			path = Interstitial;
+			sourceTree = "<group>";
+		};
 		1F9DE8332AAC961F00FB8152 = {
 			isa = PBXGroup;
 			children = (
@@ -63,7 +76,6 @@
 			children = (
 				1F9DE84D2AACAC1600FB8152 /* Info.plist */,
 				1F9DE83F2AAC961F00FB8152 /* AdMobApp.swift */,
-				1F9DE8412AAC961F00FB8152 /* ContentView.swift */,
 				1F9DE84E2AACADA400FB8152 /* GoogleAds */,
 				1F9DE84F2AACADB100FB8152 /* Resources */,
 				1F9DE8452AAC962000FB8152 /* Preview Content */,
@@ -82,6 +94,7 @@
 		1F9DE84E2AACADA400FB8152 /* GoogleAds */ = {
 			isa = PBXGroup;
 			children = (
+				1F3493682AACE34700F8953F /* Interstitial */,
 				1F9DE8502AACADC300FB8152 /* Reward */,
 			);
 			path = GoogleAds;
@@ -99,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				1F9DE8512AACADE000FB8152 /* RewardAdsManager.swift */,
+				1F34936D2AACE86D00F8953F /* RewardAdView.swift */,
 			);
 			path = Reward;
 			sourceTree = "<group>";
@@ -235,7 +249,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F9DE8522AACADE000FB8152 /* RewardAdsManager.swift in Sources */,
-				1F9DE8422AAC961F00FB8152 /* ContentView.swift in Sources */,
+				1F34936C2AACE86000F8953F /* InterstitialAdView.swift in Sources */,
+				1F34936A2AACE36300F8953F /* InterstitialAdsManager.swift in Sources */,
+				1F34936E2AACE86D00F8953F /* RewardAdView.swift in Sources */,
 				1F9DE8402AAC961F00FB8152 /* AdMobApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  InterstitialAdView.swift
 //  AdMob
 //
 //  Created by Ganesh on 09/09/23.
@@ -7,50 +7,49 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct InterstitialAdView: View {
     
     // Properties
-    @StateObject private var rewardManager = RewardAdsManager()
-    
+    @StateObject private var interstitialAdManager = InterstitialAdsManager()
     
     // Body
     var body: some View {
         ZStack{
             Color.black.ignoresSafeArea()
             
-            VStack(spacing: 20){
-                
+            VStack{
                 Image("admob")
                     .resizable()
                     .scaledToFill()
                     .frame(height: 200)
+                Spacer()
                 
                 Button {
-                    rewardManager.displayReward()
+                    interstitialAdManager.displayInterstitialAd()
                 } label: {
-                    Text("Show Reward")
+                    Text("Show InterstitialAd")
                         .font(.headline)
                         .foregroundColor(.white)
                         .fontWeight(.bold)
-                        .padding()
                         .frame(maxWidth: .infinity)
-                        .background(.blue.gradient)
+                        .padding()
+                        .background(.red.gradient)
                         .cornerRadius(10)
                         .shadow(radius: 10)
+                        .padding(.horizontal)
                 }
                 Spacer()
             }
-            .padding()
         }
         .onAppear{
-            rewardManager.loadReward()
+            interstitialAdManager.loadInterstitialAd()
         }
-        .disabled(!rewardManager.rewardLoaded)
+        .disabled(!interstitialAdManager.interstitialAdLoaded)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct InterstitialAdView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        InterstitialAdView()
     }
 }

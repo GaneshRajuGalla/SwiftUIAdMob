@@ -19,7 +19,12 @@ class AppDelegate:NSObject,UIApplicationDelegate{
 struct AdMobApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            // 1
+            //RewardAdView()
+            
+            // 2
+            InterstitialAdView()
         }
     }
 }
